@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3 id="heading" > Mark the correct answers and fill in the blank spaces where appropriate. <br> Time allowed is 15 minutes. </h3>
+    <form id="quiz" name="quiz" >
+        <h2>Question no 1:</h2>
+        <p>The financial statement that reports the revenues and expenses for a period of time such as year or a month is the ??? </p>
+        <input type="radio" id="q1"   name="question1" value="Balance_Sheet."  />Balance_Sheet. <br>
+        <input type="radio" id="q1"   name="question1" value="Income Statement." />Income Statement. <br>
+        <input type="radio" id="q1"   name="question1" value="Statement Of Cash Flows." />Statement Of Cash Flows. <br>
+
+        <h2>Question no 2:</h2>
+        <p>The financial statement that reports the asset,liabilities and stockholder's(owner's) equity at a specific date is the ?? </p>
+        <input type="radio" id="q2"  name="question2" value="Balance_Sheet." />Balance_Sheet. <br>
+        <input type="radio" id="q2"  name="question2" value="Income_Statement." />Income Statement. <br>
+        <input type="radio" id="q2"  name="question2" value="Statement Of Cash Flows." />Statement Of Cash Flows. <br>
+
+        <h2>Question no 3:</h2>
+        <p>Under the accrual basis of accounting , revenue are reported in the accounting period when the ?? </p>
+        <input type="radio" id="q3"  name="question3" value="Cash_Is_Received." />Cash_Is_Received. <br>
+        <input type="radio" id="q3"  name="question3" value="Service Or Goods Have Been Delivered." />Service Or Goods Have Been Delivered. <br>
+
+        <h2>Question no 4:</h2>
+        <p>Under the cash basis of accounting , expense are reported in the accounting period when the ?? </p>
+        <input type="radio" id="q3"  name="question4" value="Cash Is Paid" />Cash Is Paid. <br>
+        <input type="radio" id="q3"  name="question4" value="Expense Matches The Revenues Or Is Used Up." />Expense Matches The Revenues Or Is Used Up. <br> 
+
+        <h2>Question no 5:</h2>
+        <p>Revenues minus expenses equal to  ?? </p>
+        <input type="text" name="question5" id="q5" value="asset" ><br>
+
+        <h2>Question no 6:</h2>
+        <p>Resources owned by a company ( such as cash, account receivable,vehicles ) are reported on the balance sheet and are reffered to as ?? </p>
+        <input type="text" name="question6" id="q6" value="asset"><br>
+
+        <h2>Question no 7:</h2>
+        <p>Asset are usually reported on the balance sheet at which amount ?? </p>
+        <input type="radio" id="q7"  name="question7" value="Current Market Value." />Current Market Value. <br>
+        <input type="radio" id="q7"  name="question7" value="Cost." />Cost. <br>
+        <input type="radio" id="q7"  name="question7" value="Expected Selling Price." />Expected Selling Price. <br>
+
+        <h2>Question no 8:</h2>
+        <p>Obligations (amount owed) are reported on the balance sheet and are referred to as ?? </p>
+        <input type="text" name="question8" id="q8" value="asset" ><br>
+
+        <h2>Question no 9:</h2>
+        <p>Liabilities often have the word in their account title ?? </p>
+        <input type="text" name="question9" id="q9" value="asset" ><br>
+
+        <h2>Question no 10:</h2>
+        <p>Accounting entries involve a minimum of how many accounts ?? </p>
+        <input type="radio" id="q10"  name="question10" value="One." />One. <br>
+        <input type="radio" id="q10"  name="question10" value="Two." />Two. <br>
+        <input type="radio" id="q10"  name="question10" value="Three." />Three. <br>
+
+        <h2>Question no 11:</h2>
+        <p>The listing of all of the accounts available for use in a company's accounting system is known as the ?? </p>
+        <input type="text" name="question11" id="q11" value="asset" ><br>
+
+        <h2>Question no 12:</h2>
+        <p>Asset minus liabilities equals to ?? </p>
+        <input type="text" name="question12" id="q12" value="asset" ><br>
+
+        <h2>Question no 13:</h2>
+        <p>Which term is associated with "left" or "left-side" ?? </p>
+        <input type="radio" id="q13"  name="question13" value="Debit." />Debit. 
+        <input type="radio" id="q13"  name="question13" value="Credit." />Credit. <br>
+
+        <h2>Question no 14:</h2>
+        <p>Which term is associated with "right" or "right-side" ?? </p>
+        <input type="radio" id="q14"  name="question14" value="Debit." />Debit. 
+        <input type="radio" id="q14"  name="question14" value="Credit." />Credit. <br>
+
+        <h2>Question no 15:</h2>
+        <p>What will usually cause the liability account Accounts Payable to increase ?? </p>
+        <input type="radio" id="q15"  name="question15" value="Debit." />Debit. 
+        <input type="radio" id="q15"  name="question15" value="Credit." />Credit. <br>
+
+        <h2>Question no 16:</h2>
+        <p>Entries to expenses such as Rent expense are usually ?? </p>
+        <input type="radio" id="q16"  name="question16" value="Debit." />Debit. 
+        <input type="radio" id="q16"  name="question16" value="Credit." />Credit. <br>
+
+        <h2>Question no 17:</h2>
+        <p>Entries to revenues accounts such as Service Revenues are usually ?? </p>
+        <input type="radio" id="q17"  name="question17" value="Debit." />Debit. 
+        <input type="radio" id="q17"  name="question17" value="Credit." />Credit. <br>
+
+
+
+       <br> <input id="button" type="button" value="I am Finished" onclick="check()";>
+        </form>
+        <div  id="after_submit">
+            <p id="message" ></p>
+            <p id="number_correct" ></p>
+            <img id="pictures">
+        </div>
+</body>
+</html>
